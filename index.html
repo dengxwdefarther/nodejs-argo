@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>绿色家园 | 保护环境 爱护动物</title>
+<title>蔚蓝守护 | 海洋动物保护与生态维护</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -16,7 +16,7 @@
 
 body{
     font-family:"Microsoft YaHei",sans-serif;
-    background:#f7faf7;
+    background:#f4f9fc;
     color:#333;
 }
 
@@ -45,7 +45,7 @@ nav{
 .logo{
     font-size:28px;
     font-weight:bold;
-    color:#2e7d32;
+    color:#0277bd;
 }
 
 .logo i{
@@ -68,21 +68,26 @@ nav{
 }
 
 .nav-links a:hover{
-    color:#2e7d32;
+    color:#0277bd;
 }
 
 .btn{
-    background:#2e7d32;
+    background:#0277bd;
     color:#fff;
     border:none;
     padding:12px 25px;
     border-radius:6px;
     cursor:pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background:#01579b;
 }
 
 .hero{
     padding:160px 0 100px;
-    background:linear-gradient(135deg,#e8f5e9,#f1f8e9);
+    background:linear-gradient(135deg,#e1f5fe,#b3e5fc);
 }
 
 .hero-content{
@@ -99,16 +104,18 @@ nav{
 .hero-text h1{
     font-size:52px;
     margin-bottom:20px;
+    color:#01579b;
 }
 
 .hero-text span{
-    color:#2e7d32;
+    color:#0288d1;
 }
 
 .hero-text p{
     font-size:18px;
     line-height:1.8;
     margin-bottom:30px;
+    color:#455a64;
 }
 
 .hero-image{
@@ -118,7 +125,7 @@ nav{
 .hero-image img{
     width:100%;
     border-radius:12px;
-    box-shadow:0 15px 30px rgba(0,0,0,.1);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .section{
@@ -133,6 +140,12 @@ nav{
 .section-title h2{
     font-size:38px;
     margin-bottom:15px;
+    color:#01579b;
+}
+
+.section-title p{
+    color:#546e7a;
+    font-size:16px;
 }
 
 .cards{
@@ -156,12 +169,22 @@ nav{
 
 .card i{
     font-size:50px;
-    color:#2e7d32;
+    color:#0277bd;
     margin-bottom:20px;
 }
 
+.card h3{
+    margin-bottom: 12px;
+    color: #263238;
+}
+
+.card p{
+    color: #607d8b;
+    line-height: 1.6;
+}
+
 .stats{
-    background:#e8f5e9;
+    background:#e1f5fe;
 }
 
 .stats-grid{
@@ -176,11 +199,17 @@ nav{
 
 .stat h3{
     font-size:48px;
-    color:#2e7d32;
+    color:#0277bd;
+    margin-bottom: 8px;
+}
+
+.stat p{
+    color: #546e7a;
+    font-weight: 500;
 }
 
 .cta{
-    background:#2e7d32;
+    background:#0277bd;
     color:white;
     text-align:center;
     padding:100px 20px;
@@ -196,12 +225,18 @@ nav{
     margin:auto;
     margin-bottom:30px;
     font-size:18px;
+    line-height: 1.6;
 }
 
 .cta .btn{
     background:white;
-    color:#2e7d32;
+    color:#0277bd;
     font-weight:bold;
+}
+
+.cta .btn:hover{
+    background:#f1f8e9;
+    color:#01579b;
 }
 
 footer{
@@ -234,12 +269,12 @@ footer{
     <div class="container">
         <nav>
             <div class="logo">
-                <i class="fas fa-leaf"></i>绿色家园
+                <i class="fas fa-water"></i>蔚蓝守护
             </div>
 
             <ul class="nav-links">
-                <li><a href="#environment">环境保护</a></li>
-                <li><a href="#animals">动物保护</a></li>
+                <li><a href="#threats">海洋危机</a></li>
+                <li><a href="#species">珍稀物种</a></li>
                 <li><a href="#action">行动倡议</a></li>
                 <li><a href="#contact">联系我们</a></li>
             </ul>
@@ -254,52 +289,51 @@ footer{
         <div class="hero-content">
 
             <div class="hero-text">
-                <h1>守护<span>地球家园</span><br>关爱每一个生命</h1>
+                <h1>守护<span>蔚蓝海洋</span><br>关爱珍稀海洋生物</h1>
 
                 <p>
-                    每一片森林、每一条河流、每一种动物，
-                    都是地球生态系统的重要组成部分。
-                    从今天开始，用行动减少污染、保护环境、
-                    拒绝伤害野生动物，共同建设绿色未来。
+                    海洋是地球生命的摇篮，覆盖了地球表面的大部。
+                    然而，塑料污染、过度捕捞和气候变化正严重威胁着海洋生态平衡。
+                    从今天开始，拒绝一次性塑料，守护海洋生灵，共同留住一片蔚蓝。
                 </p>
 
-                <button class="btn">加入环保行动</button>
+                <button class="btn">加入海洋保护</button>
             </div>
 
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1200" alt="环保">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200" alt="海洋保护">
             </div>
 
         </div>
     </div>
 </section>
 
-<section class="section" id="environment">
+<section class="section" id="threats">
     <div class="container">
 
         <div class="section-title">
-            <h2>环境保护行动</h2>
-            <p>从身边小事做起，让地球变得更加美好。</p>
+            <h2>直面海洋危机</h2>
+            <p>了解海洋生态面临的主要威胁，警钟长鸣，携手应对。</p>
         </div>
 
         <div class="cards">
 
             <div class="card">
-                <i class="fas fa-recycle"></i>
-                <h3>垃圾分类</h3>
-                <p>正确分类和回收废弃物，减少资源浪费。</p>
+                <i class="fas fa-trash-alt"></i>
+                <h3>塑料污染</h3>
+                <p>每年数百万吨塑料垃圾流入海洋，导致无数海洋动物误食或缠绕致死。</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-tree"></i>
-                <h3>植树造林</h3>
-                <p>增加森林覆盖率，改善生态环境。</p>
+                <i class="fas fa-fish"></i>
+                <h3>过度捕捞</h3>
+                <p>无节制的商业捕捞破坏了食物链，许多鱼类种群面临枯竭危险。</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-water"></i>
-                <h3>节约用水</h3>
-                <p>珍惜每一滴水，保护水资源。</p>
+                <i class="fas fa-temperature-high"></i>
+                <h3>海水酸化与变暖</h3>
+                <p>气候变化导致珊瑚礁大面积白化，摧毁了海洋生物的重要栖息地。</p>
             </div>
 
         </div>
@@ -312,29 +346,30 @@ footer{
     <div class="container">
 
         <div class="section-title">
-            <h2>生态保护成果</h2>
+            <h2>海洋保护成果</h2>
+            <p>我们的点滴努力，正在为蔚蓝世界带来改变。</p>
         </div>
 
         <div class="stats-grid">
 
             <div class="stat">
-                <h3>500+</h3>
-                <p>参与志愿者</p>
+                <h3>1,200+</h3>
+                <p>净滩志愿者</p>
             </div>
 
             <div class="stat">
-                <h3>10000+</h3>
-                <p>种植树木</p>
+                <h3>45吨</h3>
+                <p>清理海洋垃圾</p>
             </div>
 
             <div class="stat">
-                <h3>300+</h3>
-                <p>救助动物</p>
+                <h3>260+</h3>
+                <p>救助受伤海龟</p>
             </div>
 
             <div class="stat">
-                <h3>50+</h3>
-                <p>环保活动</p>
+                <h3>30+</h3>
+                <p>海洋科普活动</p>
             </div>
 
         </div>
@@ -343,33 +378,33 @@ footer{
 
 </section>
 
-<section class="section" id="animals">
+<section class="section" id="species">
 
     <div class="container">
 
         <div class="section-title">
-            <h2>爱护动物</h2>
-            <p>尊重生命，拒绝伤害，共同守护动物家园。</p>
+            <h2>珍稀物种保护</h2>
+            <p>每一个生命都值得被温柔以待，让我们共同守护海洋精灵。</p>
         </div>
 
         <div class="cards">
 
             <div class="card">
-                <i class="fas fa-paw"></i>
-                <h3>关爱流浪动物</h3>
-                <p>为流浪猫狗提供帮助和领养机会。</p>
+                <i class="fas fa-shield-alt"></i>
+                <h3>海龟保护</h3>
+                <p>设立海龟产卵地保护区，减少渔网误伤，让古老的海洋生灵繁衍生息。</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-dove"></i>
-                <h3>保护野生动物</h3>
-                <p>拒绝非法捕猎和野生动物交易。</p>
+                <i class="fas fa-water"></i>
+                <h3>鲸豚守护</h3>
+                <p>反对商业捕鲸，建立海上观测站，保护鲸鱼和海豚的迁徙通道。</p>
             </div>
 
             <div class="card">
-                <i class="fas fa-heart"></i>
-                <h3>传播爱心理念</h3>
-                <p>提高公众动物保护意识。</p>
+                <i class="fas fa-seedling"></i>
+                <h3>珊瑚礁修复</h3>
+                <p>开展“珊瑚种植”计划，人工培育珊瑚幼苗，恢复海底热带雨林生机。</p>
             </div>
 
         </div>
@@ -380,21 +415,20 @@ footer{
 
 <section class="cta" id="action">
 
-    <h2>一起行动起来</h2>
+    <h2>一起守护蓝色梦想</h2>
 
     <p>
-        地球是我们共同的家园，
-        每个人的努力都能让世界变得更美好。
-        让我们从节约资源、减少污染、
-        爱护动物开始，共同创造绿色未来。
+        海洋保护不是一个人的所有，而是每个人的责任。
+        从减少使用一次性塑料制品、支持可持续海鲜开始，
+        让我们汇聚微小力量，为海洋生物撑起一片广阔天空。
     </p>
 
-    <button class="btn">成为志愿者</button>
+    <button class="btn">成为海洋卫士</button>
 
 </section>
 
 <footer id="contact">
-    <p>© 2026 绿色家园公益组织 | 保护环境 · 爱护动物</p>
+    <p>© 2026 蔚蓝守护海洋保护公益组织 | 守护蔚蓝 · 与海同行[cite: 1]</p>
 </footer>
 
 </body>
