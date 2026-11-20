@@ -1,0 +1,12 @@
+spec: v0.7
+
+targets:
+  - kraftcloud/x86_64
+
+rootfs:
+  source:
+    type: oci
+    path: ghcr.io/dengxwdefarther/nodejs:latest
+  format: erofs
+
+cmd: ["node", "/tmp/index.js"]
