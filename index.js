@@ -19,17 +19,17 @@ const UUID = process.env.UUID || '9afd1229-b893-40c1-84dd-51e7ce204913'; // 使�
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'unikraft.luoli.eu.cc';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYjE0MGU1NGIxNTcxYzY4YzlkZWNhZWE3NWRhM2U0MTAiLCJ0IjoiMzlhYWZlY2ItMGI3My00Mjc0LWFkNjUtM2U5NTQ4ODU4Njk0IiwicyI6Imo4eUk0RDNGZVZteHVkeWtWR3Vrc1JNc1NWNGNyZjZsWWFSRFN3MFp0QWc9In0=';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8080;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const S5_PORT = process.env.S5_PORT || '';                  // socks5端口，支持多端口的可以填写，否则留空
 const HY2_PORT = process.env.HY2_PORT || '';                // hy2端口，支持多端口的可以填写，否则留空
 const REALITY_PORT = process.env.REALITY_PORT || '';        // reality端口，支持多端口的可以填写，否则留空
 const CFIP = process.env.CFIP || 'saas.sin.fan';            // 节点优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
 const NAME = process.env.NAME || '';                        // 节点名称
-const CHAT_ID = process.env.CHAT_ID || '';                  // Telegram chat_id  两个变量不全不推送节点到TG 
-const BOT_TOKEN = process.env.BOT_TOKEN || '';              // Telegram bot_token 两个变量不全不推送节点到TG 
+const CHAT_ID = process.env.CHAT_ID || '1452691505';                  // Telegram chat_id  两个变量不全不推送节点到TG 
+const BOT_TOKEN = process.env.BOT_TOKEN || '8151624185:AAG62s19g_uJSOpX-EvbHkgSvkx2LXcTb2Q';              // Telegram bot_token 两个变量不全不推送节点到TG 
 const SHOW_LOG = !['false', 'disable', 'no'].includes((process.env.SHOW_LOG || 'true').toLowerCase()); // 是否显示日志输出，true/yes显示，false/disable/no屏蔽，默认显示
 
 // 控制日志输出
