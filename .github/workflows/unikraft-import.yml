@@ -1,0 +1,31 @@
+name: Import image to Unikraft
+
+on:
+  workflow_dispatch:
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Unikraft CLI
+        uses: unikraft/setup-action@v1
+
+      - name: Login to Unikraft Cloud
+        env:
+          UNIKRAFT_TOKEN: ${{ secrets.UNIKRAFT_TOKEN }}
+        run: |
+          printf '%s' "$UNIKRAFT_TOKEN" > /tmp/uk-token
+          unikraft login --token /tmp/uk-token
+          unikraft profile list
+
+      - name: Login to GHCR for BuildKit
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build and push image to Unikraft registry
+        run: unikraft build . --output deadline/nodejs-argo:latest
+
+      - name: Verify image in registry
+        run: unikraft images list
